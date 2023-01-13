@@ -17,14 +17,15 @@ int calculate(int n){
 class reverse{
     public:
 int calculate(int n){
-      int reversed_number = 0, remainder;
+      int rev = 0;
+    int rem;
 
   while(n != 0) {
-    remainder = n % 10;
-    reversed_number = reversed_number * 10 + remainder;
+    rem = n % 10;
+    rev = rev * 10 + rem;
     n /= 10;
   }
-cout<<reversed_number;
+cout<<rev;
 }
 
 
